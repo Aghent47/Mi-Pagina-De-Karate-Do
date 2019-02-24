@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family:serif ;
+    color: white;
+}
+
+.contenedor {
+    background: #2D2D2D;
+    padding-bottom:10px;
+    text-align: center;
+    height: auto;
+}
+@media (min-width:768px) {
+    hr{
+        width: 50%;
+    }
+}
+@media (max-width:767px) {
+    hr{
+        border: #2D2D2D;
+    }
+}
+.contenedor img{
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+.contenedor img:hover{
+    cursor:pointer;
+    transform: scale(1.1,1.1);
+}
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position:absolute;
+        background: #4E94AB;
+        width: 50%;
+        margin-left:-50%;
+        transition: all 1s;
+
+    }
+    .menu ul{
+        flex-direction: column; 
+    }
+    #btn-menu:checked ~ .menu {
+        margin-left: 0;
+    }
+} 
+img{
+    height: 100%;
+    width: 100%;
+}
+.contenedor2{
+    margin-left:25%;
+    width: 50%;
+    position: relative;
+    height:400px;
+}
+.botones{
+    
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height:50px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor:pointer;
+    transform: scale(1.2,1.2);
+}
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+.delante{
+    right:2%;
+    top: calc(50% - 70px);
+}
